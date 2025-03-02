@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --lightHover: #fcf4ff;
+  --darkHover: #2a004a;
+  --darkThem: #11001f;
+  --Outfit: [ "Outfit", "sans-serif"];
+  --Ovo: [ "Ovo", "serif"];
+}
+
 * {
   font-family: Outfit;
 }
