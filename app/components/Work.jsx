@@ -15,7 +15,7 @@ const Work = () => {
       <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-5 my-10">
         {workData.map((project, index) => (
           <div
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-xl cursor-pointer"
+            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative hover:-translate-y-1 duration-500 hover:shadow-xl cursor-pointer"
             key={index}
             style={{ backgroundImage: `url(${project.bgImage})` }}>
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 hover:bottom-7">
