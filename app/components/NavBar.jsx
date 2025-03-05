@@ -46,19 +46,29 @@ const NavBar = () => {
             isScroll ? "" : "bg-white shadow-sm bg-opacity-50"
           } `}>
           <li>
-            <a href="#top">Home</a>
+            <a href="#top" className="hover:text-gray-500 duration-500">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About me</a>
+            <a href="#about" className="hover:text-gray-500 duration-500">
+              About me
+            </a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services" className="hover:text-gray-500 duration-500">
+              Services
+            </a>
           </li>
           <li>
-            <a href="#work">My Work</a>
+            <a href="#work" className="hover:text-gray-500 duration-500">
+              My Work
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact" className="hover:text-gray-500 duration-500">
+              Contact Me
+            </a>
           </li>
         </ul>
 
@@ -68,9 +78,14 @@ const NavBar = () => {
           </button>
 
           <a
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 hover:bg-black hover:text-white duration-500"
             href="#contact">
-            Contact <Image alt="" src={assets.arrow_icon} className="w-3" />
+            Contact{" "}
+            <Image
+              alt=""
+              src={assets.arrow_icon}
+              className="w-3 hover:bg-white"
+            />
           </a>
 
           <button onClick={openMenu} className="block md:hidden ml-3">
